@@ -1,36 +1,52 @@
 <html>
-
 <head>
     <meta charset="utf-8">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <meta name="viewport" content="width=device-width">
     <link href="New.css" rel="stylesheet" type="text/css" />
     <title>Nouvelle partie</title>
 </head>
 
-<body>
-
-    <form class="main">
-        <h1>Choix du personnage</h1>
-        <div class="text">
-            <div>
-                <label for="uname">Nom personnage : </label>
-                <input type="text" id="uname" name="name" placeholder="Pseudo" required>
-            </div>
-            <select name="genre" size="1" class="genre">
-                <option>Femme</option>
-                <option>Homme</option>
-            </select>
-            <select name="role" size="1" class="role">
-                <option>Guerrier</option>
-                <option>Chasseur</option>                
-                <option>Druide</option>
-                <option>Chaman</option>
-                <option>Mage</option>
-            </select>
-            <button><a href="#">Valider</a></button>
+<body id="body">
+    <div class="general">
+        <div class="intro">
+            <form class="main">
+                <h1>Choix du personnage</h1>
+                <div class="text">
+                    <div>
+                        <label for="uname">Pseudo : </label>
+                        <input type="text" id="pseudo" name="name" placeholder="Pseudo" required />
+                    </div>
+                    <select name="genre" size="1" class="genre">
+                        <option value="Femme">Femme</option>
+                        <option value="Homme">Homme</option>
+                    </select>
+                    <select name="role" size="1" class="role">
+                        <option value="Guerrier">Guerrier</option>
+                        <option value="Chasseur">Chasseur</option>
+                        <option value="Druide">Druide</option>
+                        <option value="Chaman">Chaman</option>
+                        <option value="Mage">Mage</option>
+                    </select>
+                    <button id="ok">Valider</button>
+                </div>
+            </form>
         </div>
-    </form>
+        <div class="choix">
+            <div class="fixme">
+                <a href="#" id="scroll" style="display: none;"><span></span></a>
+                <div id="roomname"></div>
+            </div>
+            <div class="lightbox showmap">
+                <i class="featherlight-close fa fa-close"></i>
+            </div>
 
-</body>
-
-</html>
+            <div id="output"></div>
+            <br />
+            <div id="goto"></div>
+            <div id="sink"></div>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <script src="New.js"></script>
+</body></html>

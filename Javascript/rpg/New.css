@@ -1,8 +1,12 @@
 body {
-    overflow: hidden;
+    overflow: scroll;
     background: url("Images/Vue.jpg")no-repeat center fixed;
     -webkit-background-size: cover;
+    margin: 0;
 }
+
+
+/* Formulaire */
 
 .main {
     border-radius: 10px;
@@ -15,16 +19,40 @@ body {
     text-align: center;
 }
 
-.text {
-    margin-top: 10%;
+.main h1 {
+    padding: 30px;
 }
-.text div,select,button {
+
+/* Input pseudo */
+
+#pseudo {
+    border-color: #FA592E;
+    border-radius: 10px;
+    height: 30px;
+    width: 190px;
+}
+
+/* Liste deroulante */
+
+.text div,
+select,
+button {
     margin-top: 5%;
 }
 
 select {
     margin: 50px;
 }
+
+.genre,
+.role {
+    border-color: #FA592E;
+    border-radius: 10px;
+    height: 30px;
+    width: 90px;
+}
+
+/* Bouton valider */
 
 button {
     height: 48px;
@@ -58,9 +86,38 @@ button:hover {
     height: 46px;
 }
 
-.genre, .role {
-    border-color: #FA592E;
+/* Partie du jeu pour les choix */
+
+.fixme {
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 80%;
+    margin-left: 160px;
+    background-color: black;
+    text-align: center;
+    font-size: 1.7em;
+    border: 2px solid;
     border-radius: 10px;
-    height: 30px;
-    width: 90px;
+}
+
+.choix {
+    background-color: black;
+    color: white;
+    display: none;
+    text-align: center;
+}
+
+.boutonchoix {
+    border: 2px solid;
+    background-color: black;
+    display: inline-block;
+    margin: 20px;
+}
+
+.boutonchoix:hover {
+    transform: translateY(1px);
+    background: white;
+    color: black;
+    height: 46px;
 }
