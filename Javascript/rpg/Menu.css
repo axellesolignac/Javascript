@@ -53,10 +53,12 @@ button {
     transition: all 0.25s;
     background-color: #FEBC26;
 }
-button a{
+
+button a {
     text-decoration: none;
     color: #FFFFFF;
 }
+
 button:hover {
     transform: translateY(1px);
     background: #FA592E;
