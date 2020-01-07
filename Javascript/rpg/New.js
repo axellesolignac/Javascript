@@ -113,8 +113,8 @@ function choice() {
     let threeE = new Room("Enceinte du chateau");
     threeE.description = "L Impératrice vous fait deux propositions dans toutes sa bonté. Laquelle choisissez vous ?";
 
-    let fourE = new Room("Enceinte du chateau");
-    fourE.description = "Vous preferez avoir des compagnons pour pouvoir parler.";
+    let fourE = new Room("Sur la route");
+    fourE.description = "Vous preferez avoir des compagnons pour pouvoir parler. Mais malheureusement vous êtes attaqué par des pilleurs san foi ni loi et mourrez avec 5 autres personnes, sur la route.";
 
     let fiveE = new Room("Taverne de la fée pompette");
     fiveE.description = "Caliban : Toi seul peut l utiliser car c est un de tes ancêtre qui a fabriqué la boussole. Ton ancêtre la faite pour que sa descendance puisse toujours trouver un but dans leurs vies et surtout trouver ce qu il cherchaient. Comme tu es le dernier de ta famille, cette boussole te revient de droit. Comment je suis au courant de tout ça ? Tout d abord puis je te faire confiance ?";
@@ -130,7 +130,7 @@ function choice() {
     threeF.description = "Que faire maintenant ?";
 
     let fourF = new Room("Enceinte du chateau");
-    fourF.description = "Vous preferez avoir une monture magique pour aller plus vite dans cette quête, et puis vous êtes un loup solitaire, pas besoin de compagnons de sa majesté.";
+    fourF.description = "Vous preferez avoir une monture magique pour aller plus vite dans cette quête, et puis vous êtes un loup solitaire, pas besoin de compagnons de sa majesté. Vous arrivez proche d un village.";
 
     let fiveF = new Room("Taverne de la fée pompette");
     fiveF.description = "Caliban : Je vais d'abord répondre à la question la plus importante.Toi seul peut l utiliser car c est un de tes ancêtre qui a fabriqué la boussole. Ton ancêtre la faite pour que sa descendance puisse toujours trouver un but dans leurs vies et surtout trouver ce qu il cherchaient. Comme tu es le dernier de ta famille, cette boussole te revient de droit. Comment je suis au courant de tout ça ? Tout d abord puis je te faire confiance ?";
@@ -209,7 +209,7 @@ function choice() {
     threeL.description = "Vous preferez utiliser vos talents de traqueur, qui vous permettent de voir des traces effacé par le temps. Vous voyez à un endroit que la terre à été retourné, vous en déduisez que l objet se trouve dans la terre.";
     
     let fourL = new Room("Terre inconnue");
-    twoL.description = "Vous utilisez la magie pour le déterrer et vous avez bien fait car beaucoup de cordyceps, le champignon de la pandémie, ont poussé dessus avec le temps. Vous extrayez une boussole. Que faire maintenant ?";
+    fourL.description = "Vous utilisez la magie pour prendre la boussole et vous avez bien fait car beaucoup de cordyceps, le champignon de la pandémie, ont poussé dessus avec le temps. Vous extrayez une boussole. Que faire maintenant ?";
     
     let fiveL = new Room("Terre inconnue");
     fiveL.description = "Vous êtes infecté et êtes mort. Voulez vous recommencer ?";
@@ -222,12 +222,56 @@ function choice() {
     twoM.description = "Limpératrice vous explique comment faire marcher la boussole. Vous n avez qu a vouloir du plu profond de votre coeur, retouver l enfant. Vous arrivez a la faire marcher, maintenant elle pointe une direction. que faire ?";
     
     let threeM = new Room("Quelque part dans la clairiere");
-    twoM.description = "Vous suivez la direction que la boussole vous donne et arrivez dans une clairiere. Vous entendez un chant. C est une jeune fille qui se trouve un peu plus loin. Vous lui parlez, en évitant de lui faire peur et commencez a lui expliquer les enjeux de sa venue. La fille desempare vous dit quelle n a jamais utilise ses pouvoirs, on le lui interdisait. Vous décidez de lui montrer le seul sort d annihilation que vous connaissez et lui dites de se concentrer sur l image du champignon (que vous lui avez apporté dans un bocal plus tot). Elle recite l incantation et vous voyez le champignon se desintegrer dans le bocal, pour finalement disparaitre. La jeune fille avait réussi. Elle avait sauvé tout le monde. Vous la ramenez avec vous au chateau, pour la presenter a l imperatrice. En l interrogeant vous apprenez quelle est orpheline et a vecu une enfance tres dure. l Imperatrice decide de l adopter et elle fut nommée princesse et future souveraine du royaume quelle avait sauvé.";
+    threeM.description = "Vous suivez la direction que la boussole vous donne et arrivez dans une clairiere. Vous entendez un chant. C est une jeune fille qui se trouve un peu plus loin. Vous lui parlez, en évitant de lui faire peur et commencez a lui expliquer les enjeux de sa venue. La fille desempare vous dit quelle n a jamais utilise ses pouvoirs, on le lui interdisait. Vous décidez de lui montrer le seul sort d annihilation que vous connaissez et lui dites de se concentrer sur l image du champignon (que vous lui avez apporté dans un bocal plus tot). Elle recite l incantation et vous voyez le champignon se desintegrer dans le bocal, pour finalement disparaitre. La jeune fille avait réussi. Elle avait sauvé tout le monde. Vous la ramenez avec vous au chateau, pour la presenter a l imperatrice. En l interrogeant vous apprenez quelle est orpheline et a vecu une enfance tres dure. l Imperatrice decide de l adopter et elle fut nommée princesse et future souveraine du royaume quelle avait sauvé.";
     
     let fourM = new Room("Antemeta");
-    oneM.description = "Vous essayez de trouver le mysterieux homme que vous avez vu au chateau mais sans succes. Apres avoir chercher pratiquement partout, il ne vous reste que deux endroits.";
+    fourM.description = "Vous essayez de trouver le mysterieux homme que vous avez vu au chateau mais sans succes. Apres avoir chercher pratiquement partout, il ne vous reste que deux endroits.";
+    
+    let fiveM = new Room("Petit village en bord de mer");
+    fiveM.description = "Vous essayer de trouver l objet avec votre magie, en scannant les alentours. Mais vous ne trouvez rien.";
+    
+    //N//
+    let oneN = new Room("Petit village en bord de mer");
+    oneN.description = "Vous demandez aux villageois si ils ont deja vu ou entendu parler d un objet magique dans les environs. Mais aucun d eux n avaient jamais eu vent de cet objet. Un villageois cependant, me fit remarquer que pas loin d ici, a un endroit tres precis, la terre s assechait. Vous choisissez de vous aventurer dans la foret pour trouver cet endroit dont il vous a parle.";
+    
+    let twoN = new Room("Foret");
+    twoN.description = "Vous allez a droite.";
+    
+    let threeN = new Room("Foret");
+    threeN.description = "Vous allez tout droit.";
+    
+    let fourN = new Room("Foret");
+    fourN.description = "Vous allez a gauche.";
+    
+    let fiveN = new Room("Foret");
+    fiveN.description = "Vous allez tout droit et rencontrez un groupe de mercenaires sur la route que faire ?";
+    
+    //O//
+    let oneO = new Room("Foret");
+    oneO.description = "Vous discutez ensemble et créez une amitié avec le chef. Tout d un coup il sort un objet de sa poche et vous avez comme un pressentiment que c est l objet que vous cherchez. Vous lui demandez gentiement, ou il l a trouve et si il peut vous le donner. Il accepte, tout en repondant que son chien l a deterre non loin. Maintenant votre objectif est de retouver l enfant. au meme moment ou vous vous dites ca l aiguille de la boussole pointe dans une direction. Vous la suivez et arrivez dans une clairiere. Vous entendez un chant. C est une jeune fille qui se trouve un peu plus loin. Vous lui parlez, en évitant de lui faire peur et commencez a lui expliquer les enjeux de sa venue. La fille desempare vous dit quelle n a jamais utilise ses pouvoirs, on le lui interdisait. Vous décidez de lui montrer le seul sort d annihilation que vous connaissez et lui dites de se concentrer sur l image du champignon (que vous lui avez apporté dans un bocal plus tot). Elle recite l incantation et vous voyez le champignon se desintegrer dans le bocal, pour finalement disparaitre. La jeune fille avait réussi. Elle avait sauvé tout le monde. Vous la ramenez avec vous au chateau, pour la presenter a l imperatrice. En l interrogeant vous apprenez quelle est orpheline et a vecu une enfance tres dure. l Imperatrice decide de l adopter et elle fut nommée princesse et future souveraine du royaume quelle avait sauvé.";
+    
+    let twoO = new Room("Foret");
+    twoO.description = "Vous allez tout droit. Revenez sur vos pas.";
+    
+    let threeO = new Room("Foret");
+    threeO.description = "Vous allez a droite.";
+    
+    let fourO = new Room("Foret");
+    fourO.description = "Vous allez tout droit.";
+    
+    let fiveO = new Room("Foret");
+    fiveO.description = "Vous allez a droite.";
+    
+    //P//
+    let oneP = new Room("Foret");
+    oneP.description = "Vous allez a droite.";
+    
+    let twoP = new Room("Foret");
+    twoP.description = "Vous allez a gauche.";
+    
+    let threeP = new Room("Foret");
+    threeP.description = "Vous tombez dans un piege a ours et mourrez. Voulez vous recommencer.";
 
-    // connect the rooms
     //1
     oneA.addExit("J accepte la quête", twoA).addExit("Décliner", twoB);
     oneB.addExit("Décliner l invitation", twoC).addExit("Accepter le rendez vous", twoD);
@@ -241,8 +285,10 @@ function choice() {
     oneJ.addExit("ecume", threeJ).addExit("sel", threeJ);
     oneL.addExit("Prendre la boussole", twoI).addExit("Voir si il y a des pièges", threeI);
     oneM.addExit("Aller voir l Impératrice", twoM).addExit("Retrouver l Homme étrange", fourM);
+    oneN.addExit("Tout droit", fourN).addExit("A droite", twoN).addExit("A gauche", threeP);
+    oneP.addExit("Parler avec eux", oneO).addExit("Les affronter", oneA);
     //2    
-    twoA.addExit("Sortir", threeA).addExit("Rester", threeB);
+    twoA.addExit("Sortir du chateau", threeA).addExit("Rester", threeB);
     twoB.addExit("Oui", oneA);
     twoC.addExit("Sortir", threeA);
     twoD.addExit("Flaner dans les rues", threeC).addExit("Aller au rdv en avance", threeD);
@@ -250,9 +296,13 @@ function choice() {
     twoF.addExit("Se diriger vers l homme étrange", oneB);
     twoG.addExit("Le prendre dans l equipe", threeG).addExit("Ne pas l accepter", fourG);
     twoH.addExit("Récupérer la boussole", twoI).addExit("Regarder si il y a des pièges autour de la boussole", threeI);
-    twoI.addExit("Recommencer", fourG);
+    twoI.addExit("Oui", oneA);
+    twoJ.addExit("Pont dorée", fiveK).addExit("Pont lugubre", oneL);
     twoL.addExit("Utiliser la magie", fourL).addExit("Utiliser ses mains", fiveL);
     twoM.addExit("suivre les indications de la boussole", threeM);
+    twoN.addExit("A gauche", fourN).addExit("Tout droit", fiveN);
+    twoP.addExit("Parler avec eux", oneO).addExit("Les affronter", oneA);
+    
     //3    
     threeA.addExit("Aller à la taverne", fourA).addExit("Chercher des informations sur la boussole", fourB);
     threeB.addExit("Homme étrange", oneB).addExit("Courtisane", oneC).addExit("Impératrice", oneD);
@@ -262,29 +312,40 @@ function choice() {
     threeF.addExit("Partir en la remerciant", oneG);
     threeG.addExit("Chercher dans les buissons", fiveG).addExit("Faire le tour du donjon", oneH);
     threeH.addExit("Enigme 1", fourI).addExit("Enigme 2", fiveI).addExit("Enigme 3", oneJ);
-    threeI.addExit("Récupérer la boussole", twoL);
+    threeI.addExit("Récupérer la boussole", fourL);
     threeL.addExit("Utiliser la magie", fourL).addExit("Utiliser ses mains", fiveL);
+    threeN.addExit("Tout droit", twoO).addExit("A droite", threeO);
+    threeO.addExit("Tout droit", fourO).addExit("A droite", fiveO);
+    threeP.addExit("Oui", oneA);
     //4
     fourA.addExit("Aller vérifier les informations", fiveA).addExit("Rester pour questionner un peu plus", fiveB);
     fourB.addExit("Direction la taverne de la fée pompette", fourA);
-    fourC.addExit("Présenter la fille", fiveC).addExit("Parler avec lhomme", fiveD);
+    fourC.addExit("Présenter la fille", fiveC).addExit("Parler avec l homme", fiveD);
     fourD.addExit("Parler avec l homme", fiveD);
+    fourE.addExit("Oui", oneA);
+    fourF.addExit("Chercher la boussole avec la magie", fiveM).addExit("Demander autour de vous", oneN);
     fourG.addExit("Oui", oneA);
     fourH.addExit("Enigme 1", fourI).addExit("Enigme 2", fiveI).addExit("Enigme 3", oneJ);
     fourI.addExit("Une enigme", twoJ).addExit("une porte", threeJ).addExit("Un trou", threeJ).addExit("Une vitre", threeJ);
     fourL.addExit("Essayer de la faire marcher ?", oneM).addExit("Retourner au chateau", twoM);
     fourM.addExit("Aller sans presser au chateau", twoM).addExit("Tenter de le trouver dans la taverne", fiveL);
+    fourN.addExit("Revenir sur ses pas", twoN);
+    fourO.addExit("A droite", oneP);
     //5 
     fiveA.addExit("Se fier à son instinct", twoL).addExit("Utiliser son talent de traqueur", threeL);
     fiveB.addExit("Se fier à son instinct", twoL).addExit("Utiliser son talent de traqueur", threeL);
+    fiveC.addExit("Pourquoi suis je l unique personne a faire marcher cette boussole ?", fiveE).addExit("Comment savez vous tout ça ?", fiveE);
     fiveD.addExit("Pourquoi suis je l unique personne a faire marcher cette boussole ?", fiveE).addExit("Comment savez vous tout ça ?", fiveE);
     fiveE.addExit("Oui", twoG).addExit("A toi de voir", twoG);
     fiveF.addExit("Oui", twoG).addExit("A toi de voir", twoG);
     fiveG.addExit("Porte violette", twoH).addExit("Porte rouge", threeH).addExit("Porte bleu", fourH).addExit("Porte verte", fiveH).addExit("Porte blanche", oneI);
     fiveH.addExit("Enigme 1", fourI).addExit("Enigme 2", fiveI).addExit("Enigme 3", oneJ);
     fiveI.addExit("Une ombre", threeJ).addExit("Lettre e", twoJ);
-    fiveK.addExit("recommencer", fourG);
+    fiveK.addExit("Oui", oneA);
     fiveL.addExit("Oui", oneA);
+    fiveM.addExit("Demander autour de vous", oneN);
+    fiveN.addExit("Parler avec eux", oneO).addExit("Les affronter", oneA);
+    fiveO.addExit("A gauche", twoP);
 
     goTo(oneA);
 };
